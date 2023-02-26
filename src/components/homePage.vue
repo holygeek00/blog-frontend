@@ -8,7 +8,7 @@
         <div class="dropdown dropdown-end">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full">
-              <img src="src/assets/naassh-icon.jpeg" />
+              <img src="../../public/naassh-icon.jpeg" />
             </div>
           </label>
           <ul
@@ -27,10 +27,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="hero min-h-screen"
-      style="background-image: url(src/assets/naassh.jpeg)"
-    >
+    <div class="hero min-h-screen" style="background-image: url(/naassh.jpeg)">
       <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md">
           <h1 class="mb-5 text-5xl font-bold">Welcome To Naassh's Blog!</h1>
@@ -93,10 +90,6 @@
   </footer>
 </template>
 
-<script setup>
-const mypicture = {
-  url: '@/assets/naassh.jpeg',
-}
-</script>
+<script setup></script>
 
 <style></style>
