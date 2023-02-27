@@ -2,7 +2,7 @@
   <div class="min-h-screen">
     <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Article</a>
+        <a class="btn btn-ghost normal-case text-xl">Articles</a>
       </div>
       <div class="flex-none gap-2">
         <div class="dropdown dropdown-end">
@@ -30,8 +30,7 @@
     <div class="hero min-h-screen" style="background-image: url(/naassh.jpeg)">
       <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Welcome To Naassh's Blog!</h1>
-          <p class="mb-5 text-2xl">Enjoy yourself!</p>
+          <h1 class="mb-10 text-5xl font-bold">Welcome To Naassh's Blog!</h1>
         </div>
       </div>
     </div>
