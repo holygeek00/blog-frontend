@@ -2,11 +2,12 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import getAboutMe from '@/api/article.js'
+import articleApi from '@/api/article.js'
 let data = ref({})
 setTimeout(() => {
-  getAboutMe()
+  articleApi.getAboutme()
 }, 1000)
+console.log(import.meta.env.VITE_BASIC_API)
 </script>
 
 <style></style>
