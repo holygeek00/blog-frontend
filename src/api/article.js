@@ -2,7 +2,7 @@ import request from '@/api/request.js'
 
 const articleApi = {
   getAboutme () {
-    return request.get('/aboutme')
+    return request.get('/aboutme?populate=*')
   }
 }
 
