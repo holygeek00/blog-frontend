@@ -29,7 +29,7 @@
   <div class="hero min-h-screen bg-base-200" v-else>
     <div class="hero-content text-center">
       <div class="max-w-md">
-        <h1 class="text-5xl font-bold">About Naassh</h1>
+        <h1 class="text-5xl font-bold">About Naassh Here!</h1>
         <p class="py-6">{{ data }}</p>
         <button class="btn btn-primary">Explore More!</button>
       </div>
