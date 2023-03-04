@@ -1,8 +1,14 @@
-import request from '@/api/request.js'
+import request from '@/utils/request.js'
 
 const articleApi = {
   getAboutme () {
     return request.get('/aboutme?populate=*')
+  },
+  getArticles () {
+    return request.get('/articles?populate=*')
+  },
+  getArticlesDetail (ids) {
+    return request.get('/articles/' + ids)
   }
 }
 

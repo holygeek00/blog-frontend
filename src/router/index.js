@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutMe from '@/views/aboutMe.vue'
 import Home from '@/views/index/homePage.vue'
+import Catalog from '@/views/catalog/index.vue'
+import Detail from '@/components/articleDetail.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,6 +22,15 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: AboutMe
+    }, {
+      path: '/catalog',
+      name: 'catalog',
+      component: Catalog
+
+    }, {
+      path: '/detail/:id',
+      name: 'ArticleDetail',
+      component: Detail
     }
   ]
 })
