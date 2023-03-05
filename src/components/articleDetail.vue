@@ -1,5 +1,8 @@
 <template>
-  <div v-html="result.value"></div>
+  <div v-if="result" class="markdown-body">
+    <div v-html="result.value"></div>
+  </div>
+  <div v-else>Loading...</div>
 </template>
 
 <script setup>
@@ -7,9 +10,10 @@ import { useRoute } from 'vue-router'
 import articleApi from '@/api/article.js'
 import MarkdownToHtml from '@/utils/markdown.js'
 import { ref, computed } from 'vue'
+import 'github-markdown-css'
 const route = useRoute()
 const id = route.params.id
-const content = ref('')
+const content = ref({})
 let result = ref('')
 function getData() {
   articleApi
@@ -21,16 +25,18 @@ function getData() {
 }
 
 function markdownToHtml(content) {
-  result = computed(async () => {
+  let result = computed(() => {
     try {
-      return await MarkdownToHtml(content.value)
+      return MarkdownToHtml(content.value)
     } catch (err) {
       // handle error
     }
   })
+  return result
 }
 getData()
-markdownToHtml(content)
+result = markdownToHtml(content)
+console.log(result.value)
 </script>
 
-<style></style>
+<style scoped></style>

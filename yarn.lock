@@ -1132,6 +1132,11 @@ giget@^1.1.0:
     pathe "^1.1.0"
     tar "^6.1.13"
 
+github-markdown-css@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmmirror.com/github-markdown-css/-/github-markdown-css-5.2.0.tgz#9f9e30f16cbc1d3b76110667b7c36ca3d96c9cdc"
+  integrity sha512-hq5RaCInSUZ48bImOZpkppW2/MT44StRgsbsZ8YA4vJFwLKB/Vo3k7R2t+pUGqO+ThG0QDMi96TewV/B3vyItg==
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.npmmirror.com/glob-parent/-/glob-parent-5.1.2.tgz"
@@ -1357,6 +1362,11 @@ marked@^4.2.12:
   version "4.2.12"
   resolved "https://registry.npmmirror.com/marked/-/marked-4.2.12.tgz#d69a64e21d71b06250da995dcd065c11083bebb5"
   integrity sha512-yr8hSKa3Fv4D3jdZmtMMPghgVt6TWbk86WQaWhDloQjRSQhMMYCAro7jP7VDJrjjdV8pxVxMssXS8B8Y5DZ5aw==
+
+md-editor-v3@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.npmmirror.com/md-editor-v3/-/md-editor-v3-2.9.0.tgz#9df986a474841baa5c6d5e81e3c0d9cfded585b5"
+  integrity sha512-mpnB368J3LPj0VFCP9SdO5JH7gHS/IDD9j31dQc/OttInjxDhhAm8aY5Fda1ZiiXpGTQgzIHQVTqLiKO8J3ekg==
 
 memory-fs@^0.5.0:
   version "0.5.0"

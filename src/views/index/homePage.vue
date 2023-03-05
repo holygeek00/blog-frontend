@@ -13,7 +13,7 @@
               <img :src="iconUrl" />
             </div>
           </label>
-          <ul
+          <!-- <ul
             tabindex="0"
             class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
           >
@@ -25,7 +25,7 @@
             </li>
             <li><a>Settings</a></li>
             <li><a>Logout</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
