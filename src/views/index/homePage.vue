@@ -45,7 +45,9 @@
       <router-link to="/aboutme"
         ><a className="link link-hover">About me</a></router-link
       >
-      <a className="link link-hover">Contact</a>
+      <router-link to="/contact">
+        <a className="link link-hover">Contact</a>
+      </router-link>
     </div>
     <div>
       <div className="grid grid-flow-col gap-4">

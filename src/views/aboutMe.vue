@@ -37,7 +37,6 @@ function getData() {
   console.log(imgurl)
 }
 getData()
-console.log(import.meta.env.VITE_BASIC_API)
 </script>
 
 <style></style>
