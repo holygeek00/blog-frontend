@@ -10,7 +10,7 @@
       </div>
       <div>
         <h2 class="text-gray-800 text-3xl font-semibold">Contact Me</h2>
-        <p class="mt-2 text-gray-600">{{ data }}</p>
+        <p class="text-xl text-gray-600" v-html="data"></p>
       </div>
       <div class="flex justify-end mt-4">
         <a href="#" class="text-xl font-medium text-indigo-500">Naassh</a>
