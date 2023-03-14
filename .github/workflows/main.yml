@@ -32,10 +32,10 @@ jobs:
             # 打包
             - name: Build
               run: yarn build && sudo su
-            - name: Install SSH Key
-              uses: shimataro/ssh-key-action@v2
-              with:
-               key: ${{ secrets.SSH_PRIVATE_KEY }}
-               known_hosts: unnecessary
+#             - name: Install SSH Key
+#               uses: shimataro/ssh-key-action@v2
+#               with:
+#                key: ${{ secrets.SSH_PRIVATE_KEY }}
+#                known_hosts: unnecessary
             - name: Deploy with rsync
-              run:  sshpass -p ${{ secrets.PASSWORD }} rsync -avz -e "ssh -o StrictHostKeyChecking=no -p 22" ./dist ubuntu@${{ secrets.SSH_HOST }}:~/frontend-page/
+              run:  sshpass -p ${{ secrets.PASSWORD }} rsync -avz -e "ssh -o StrictHostKeyChecking=no -p 22" ./dist root@${{ secrets.SSH_HOST }}:~/frontend-page/
