@@ -38,4 +38,4 @@ jobs:
 #                key: ${{ secrets.SSH_PRIVATE_KEY }}
 #                known_hosts: unnecessary
             - name: Deploy with rsync
-              run:  sshpass -p ${{ secrets.PASSWORD }} rsync -avz -e "ssh -o StrictHostKeyChecking=no -p 22" ./dist root@${{ secrets.SSH_HOST }}:~/frontend-page/
+              run:  sshpass -p ${{ secrets.PASSWORD }} rsync -avz -e "ssh -o StrictHostKeyChecking=no -p 22" ./dist ubuntu@${{ secrets.SSH_HOST }}:~/frontend-page/
